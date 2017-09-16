@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>David's Exploration 1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initital-scale=1">
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        
+        <style>
+         .tblrow   {
+	               border: 1px solid white;
+	               background: #f5f5f5;
+	               text-align: center;
+	               padding-top: 8px;
+	               padding-bottom: 8px;
+	               } 
+            .bg-color {
+                background-color: aqua;
+            }
+        </style>
+        
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+        <!-- Popper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    
+    </head>
+    
+    <body class="bg-color">
+        <!-- Start of Jumbotron Code Block -->
+        <div class="jumbotron jumbotron-fuild">
+            <div class="container">
+                <h1>David's Exploration 1</h1>
+                    <p>We are stepping into Bootstrap setup and implementations of their features.</p>
+            </div>
+        </div>      
+        
+        <!-- All content goes in this div -->
+        <div class="container">
+
+            <!-- End of Jumbotron Code Block -->
+            
+            <!-- Start of Table Layout Code Block -->
+            <div class="row">
+                
+                <!-- Start of Keyboard Highlight Code Block -->
+                <div class="col-md-12 tblrow">A cool feature of Bootstrap is that we can highlight keyboard commands . The shortcut for refreshing a webpage on Mac is <kbd><kbd>Command</kbd><kbd>+</kbd><kbd>R</kbd></kbd>
+                </div>
+                <!-- End of Keyboard Highlight Code Block -->
+                
+                <!-- Start of Group Radio Button Code Block -->
+                <div class="col-md-12 tblrow">We can also have groups of buttons which  react like radio buttons. This allows you to toggle one selection at a time. Like so:
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="A+" autocomplete="off" checked>
+                            A+
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="A" autocomplete="off">
+                            A
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="options" id="B" autocomplete="off">
+                            B
+                        </label>
+                    </div>
+                </div>
+                <!-- End of Group Radio Button Code Block -->
+                
+                <!-- Start of Drop Down Box Code Block -->
+                <div class="col-md-12 tblrow">We can also do drop down boxes which can redirect you to different pages depending on the selection in the drop down. Also note you can do a drop up if you change the packaging div class from "dropdown" to "dropup".
+                    <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="fundrop" data-toggle="dropdown" aria-haspopup="true" aria-explanded="false">Fun Drop</button>
+                        <div class="dropdown-menu" aria-labelledby="fundrop">
+                        <a class="dropdown-item" href="#">Cool Page</a>
+                        <a class="dropdown-item" href="#">Cool Page 2</a>
+                        <a class="dropdown-item disabled" href="#">Cool Page 3</a>
+                         </div>
+                    </div>
+                </div>
+                <!-- End of Drop Down Box Code Block -->
+                
+                <!-- Start of Input Label Group Block -->
+                <div class="col-md-12 tblrow">You can also have input field groups which allow you to do the following. This would seem useful if you are trying to get certain data out of a user.
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (rounded to the nearest dollar)">
+                    <span class="input-group-addon">.00</span>
+                    </div>
+                </div>
+                <!-- End of Input Label Group Block -->
+                
+                <!-- Start of Multiple Page Nav Bar Code Block -->
+                <div class="col-md-12 tblrow">We can add in a page navigation bar which could be used for say a tutorial that has multiple topics in succession.
+                <nav>
+                    <ul class="pagination">
+                    <li class="page-item">
+                        <a href="#" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span>
+                        </a>
+                        </li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                        <li class="page-item">
+                        <a href="#" class="page-link" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+                <!-- End of Multiple Page Nav Bar Code Block -->
+
+                <!-- Start of Carousel Code Block -->
+                <div class="col-md-12 tblrow">
+                Here we have a carousel with an indicator which is clickable to show which image is being shown. These are all StarCraft Desktop Images.
+                <div id="scCarousel" class="carousel slide bg-inverse" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#scCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#scCarousel" data-slide-to="1"></li>
+                    <li data-target="#scCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid ml-auto mr-auto" src="images/BattleCruiser.jpg" alt="Battle Cruiser">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid ml-auto mr-auto" src="images/JimmySarah.jpg" alt="Jimmy & Sarah">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid ml-auto mr-auto" src="images/TerrianMarines.jpg" alt="Marines">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#scCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#scCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>               
+                </div>
+                <!-- End of Carousel Code Block -->
+                
+                <!-- Scroll Spy Code Block -->
+                <div class="col-md-12 tblrow">Next we have scrollspy. This allows us to set up a nav bar that will link to certain positions in the page or area we have it enabled.
+                    <nav id="scrollspy-nav" class="navbar navbar-default">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#lorem">Lorem</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#maecenas">Maecenas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nam">Nam</a>
+                            </li>
+                        </ul>
+                    </nav>  
+                    <article data-spy="scroll" data-target="#scrollspy-nav" data-offset="0" style="overflow: scroll; width: 60vw; height: 70vh; font-size: 2vw;">
+                        <h4 id="lorem">Lorem Ipsum</h4>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula ullamcorper risus, eu consectetur augue tincidunt molestie. Aenean varius, turpis in consectetur bibendum, magna erat hendrerit sem, quis finibus quam purus a dolor. Maecenas nec porttitor turpis. Fusce id nisl lacus. Donec vulputate tristique felis gravida finibus. Vivamus vel justo interdum, dictum nisl eu, ultricies leo. Morbi sagittis velit ut ante hendrerit porttitor. Etiam id placerat nisl. Quisque pulvinar ac urna a scelerisque. Curabitur vitae dignissim nunc. Sed interdum enim at nulla facilisis, id ornare urna imperdiet.
+                        </p>
+                        <h4 id="maecenas">Maecenas</h4>
+                        <p>Maecenas eget semper lacus. Mauris diam lectus, mollis eget nisi et, iaculis ultrices leo. Sed a ipsum id nunc commodo auctor a sit amet nisi. Aenean ac urna eu massa ullamcorper lobortis. Aliquam luctus viverra dui eget blandit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sit amet imperdiet eros. Phasellus condimentum libero leo, quis euismod leo cursus ac. 
+                        </p>
+                        <h4 id="nam">Nam</h4>
+                        <p> Nam vehicula tristique enim a suscipit. Aliquam venenatis aliquet maximus. Etiam id auctor lorem. Suspendisse condimentum pretium erat a ornare. Praesent commodo est nec porttitor lobortis. Nullam eu pulvinar nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut pretium nisl augue, vel efficitur diam imperdiet quis. Aenean posuere venenatis dui ut elementum. In nec nibh nec urna luctus vulputate. Duis lobortis accumsan ex, quis egestas ex sollicitudin egestas. Nullam rhoncus a sapien eget faucibus. Phasellus imperdiet scelerisque justo vel volutpat. Mauris ornare maximus eleifend. Ut porttitor neque eu magna finibus, a euismod ipsum rutrum. Vestibulum rutrum a urna eget auctor. 
+                        </p>
+                    </article>
+                </div>
+                <!-- End of Scroll Spy Code Block -->
+                
+            </div>
+            <!-- End of Table Layout Code Block -->
+        </div>
+    </body>
+</html>
